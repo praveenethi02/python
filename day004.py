@@ -36,9 +36,68 @@ states_of_america.append("New state") #add the new item to end of the list
 print(states_of_america)'''
 
 #Geuss the name
-names_string = input("Enter names separated by commas: ")
+'''names_string = input("Enter names separated by commas: ")
 names = names_string.split(", ")
 
 num_items = len(names)
 random_chance = random.randint(0, num_items-1)
-print(names[random_chance])
+print(names[random_chance])'''
+
+#addition of the two list
+'''name1 = ["tom", "ram", "rom", "tin"]
+name2 = ["pin", "min", "hew"]
+
+names = (name1 , name2)
+print(names)'''
+
+#map challenge
+
+'''in1 = ["=", "=", "="]
+in2 = ["=", "=", "="]
+in3 = ["=", "=", "="]
+
+all = (in1 , in2 , in3)
+position = input("Enter x spot : ")
+
+letter = position[0].lower()
+abc = ["a","b","c"]
+letter_index = abc.index(letter)
+number_index = int(position[1]) - 1
+
+all[number_index][letter_index] = "X"
+
+print(f"{in1}\n{in2}\n{in3}")'''
+
+#rock paper scissors
+
+choice = int(input("rock=0, paper=1, scissor=2 : "))
+
+com = random.randint(0,2)
+
+if(choice==0):
+    if(com==0):
+        print("Com choose the rock.Game tie.")
+    elif(com==1):
+        print("Com choose the paper.You lose")
+    else:
+        print("Com choose the scissor.You win")
+
+elif(choice==1):
+    if(com==0):
+        print("Com choose the rock.You win.")
+    elif(com==1):
+        print("Com choose the paper.Game tie")
+    else:
+        print("Com choose the scissor.You lose")
+
+elif(com==2):
+    if(com==0):
+        print("Com choose the rock.You lose.")
+    elif(com==1):
+        print("Com choose the paper.You win")
+    else:
+        print("Com choose the scissor.Game tie")
+
+else:
+    print("Invalid enter")
+
