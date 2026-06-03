@@ -54,7 +54,7 @@ print(total)'''
 
 #Calculate the even numbers sum in list using for loop
 
-num = int(input("Enter number : "))
+'''num = int(input("Enter number : "))
 no = num + 1
 total = 0
 
@@ -63,6 +63,15 @@ for number in range(1,no):
         total+=number
     else:
         total+=0
+
+print(total)'''
+
+#2nd method
+num = int(input("Enter number : "))
+no = num + 1
+total = 0
+for num in range(0,no,2):
+    total+=num
 
 print(total)
 
