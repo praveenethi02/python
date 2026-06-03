@@ -7,7 +7,7 @@ for fruit in fruits:
 
 #Get the student height
 
-student_height = input("Enter the heights of students separated by spaces: ").split()
+'''student_height = input("Enter the heights of students separated by spaces: ").split()
 for n in range(0, len(student_height)):
     student_height[n] = int(student_height[n])
 total_height = 0
@@ -21,4 +21,33 @@ avg_height = round(avg_height)
 
 print(f"Total height : {total_height}cm")
 print(f"Number of students : {num_of_students}")
-print(f"Average height : {avg_height}cm")
+print(f"Average height : {avg_height}cm")'''
+
+#Find the highest number in list
+
+'''score = input("Enter the numbers : ").split()
+max = 0
+for n in range(0, len(score)):
+    score[n]=int(score[n])
+    if(max<score[n]):
+        max = score[n]
+    else:
+        max=max
+
+print(f"Max score is : {max}")'''
+
+#range function in for loop
+
+'''for number in range(1,10):
+    print(number)          #when we added the range (1,10) in for loop print 1 - 9 num only.If we want the 10 we must added to range (1-11).
+
+for number in range(1,10,3):
+    print(number)      #output is 1 4 7'''
+
+#Get the total of list
+total = 0
+for num in range(1,101):
+    total+=num
+
+print(total)
+
