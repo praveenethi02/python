@@ -52,15 +52,15 @@ for num in range(1,101):
 
 print(total)'''
 
-#Even number sumation in list
+#Calculate the even numbers sum in list using for loop
 
 num = int(input("Enter number : "))
 no = num + 1
 total = 0
 
-for number in range(0,no):
+for number in range(1,no):
     if(number%2==0):
-        total+=total
+        total+=number
     else:
         total+=0
 
