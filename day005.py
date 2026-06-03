@@ -42,12 +42,29 @@ print(f"Max score is : {max}")'''
     print(number)          #when we added the range (1,10) in for loop print 1 - 9 num only.If we want the 10 we must added to range (1-11).
 
 for number in range(1,10,3):
-    print(number)      #output is 1 4 7'''
+    print(number)      #output is 1 4 7'''  
 
-#Get the total of list
-total = 0
+
+#Get the total of list using for loop
+'''total = 0
 for num in range(1,101):
     total+=num
 
+print(total)'''
+
+#Even number sumation in list
+
+num = int(input("Enter number : "))
+no = num + 1
+total = 0
+
+for number in range(0,no):
+    if(number%2==0):
+        total+=total
+    else:
+        total+=0
+
 print(total)
+
+
 
