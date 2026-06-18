@@ -1,8 +1,76 @@
 import random
+import hangman_word
 
-word_list = ["apple", "banana", "orange"]
+stages = [
+    '''
+      +---+
+      |   |
+          |
+          |
+          |
+          |
+    =========
+    ''',
+    '''
+      +---+
+      |   |
+      O   |
+          |
+          |
+          |
+    =========
+    ''',
+    '''
+      +---+
+      |   |
+      O   |
+      |   |
+          |
+          |
+    =========
+    ''',
+    '''
+      +---+
+      |   |
+      O   |
+     /|   |
+          |
+          |
+    =========
+    ''',
+    '''
+      +---+
+      |   |
+      O   |
+     /|\  |
+          |
+          |
+    =========
+    ''',
+    '''
+      +---+
+      |   |
+      O   |
+     /|\  |
+     /    |
+          |
+    =========
+    ''',
+    '''
+      +---+
+      |   |
+      O   |
+     /|\  |
+     / \  |
+          |
+    =========
+    '''
+]
 
-chosen_word = random.choice(word_list)
+life = 6
+
+
+chosen_word = random.choice(hangman_word.word_list)
 print(chosen_word)
 
 display = []
@@ -19,8 +87,17 @@ while not end_of_game:
         if letter == guess:
             display[position] = guess
 
+    if guess not in chosen_word:
+        print(f"You chosen letter {guess} not in word.So you miss one life.")
+        life -= 1
+        if life == 0:
+            end_of_game = True
+            print(f"You lose and correct word is {chosen_word}.")
+
     print(display)
 
     if "_" not in display:
         end_of_game = True
         print("You win!")
+    
+    print(stages[6-life])
