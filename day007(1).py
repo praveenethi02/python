@@ -1,5 +1,8 @@
 import random
 import hangman_word
+import hangman_logo
+
+print(hangman_logo.logo)
 
 stages = [
     '''
