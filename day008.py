@@ -31,7 +31,7 @@ greet_with(location = "matale", name = "praveen")'''
 
 #Activity 1
 
-import math
+'''import math
 
 def paint_cal(height, width, cover):
     cans = (height*width)/cover
@@ -41,4 +41,21 @@ def paint_cal(height, width, cover):
 test_h = int(input("Height : "))
 test_w = int(input("Width : "))
 coverage = 5
-paint_cal(height=test_h, width=test_w, cover=coverage)
+paint_cal(height=test_h, width=test_w, cover=coverage)'''
+
+#Activity 2
+
+def prime_checker(number):
+    is_prime = True
+    for x in range(2,number):
+        if number % x == 0:
+            is_prime = False
+        
+    if is_prime:
+        print("Prime!")
+
+    else:
+        print("Not prime!")
+
+n = int(input())
+prime_checker(number=n)
