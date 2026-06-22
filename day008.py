@@ -121,5 +121,3 @@ def caesar(plain_text, shift_amount, dir):
         
 caesar(plain_text = text, shift_amount = shift, dir = direction)
 again = input("Do you want to continue the game? Type 'yes' or 'no' : ").lower()
-
-if again == "yes":
