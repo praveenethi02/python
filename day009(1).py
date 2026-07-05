@@ -14,16 +14,16 @@ print(progrmming_dictionary)
 #create a empty dictionary
 
 no_item = {}
-print(no_item)
+print(no_item)'''
 
 #edit item in a dictionary
 
-progrmming_dictionary["Bug"] = "Edit the previous one"
-print(progrmming_dictionary["Bug"])
+'''progrmming_dictionary["Bug"] = "Edit the previous one"
+print(progrmming_dictionary["Bug"])'''
 
 #Loop through a dictionary
 
-for key in progrmming_dictionary:
+''' for key in progrmming_dictionary:
     print(key)
     print(progrmming_dictionary[key])'''
 
@@ -53,36 +53,36 @@ print(student_grades)
 
 '''
 #Nesting
-capitals = {
+'''capitals = {
     "France": "Paris",
     "Germany": "Berlin",
-}
+}'''
 
 #Nesting a list in a dictionary
-travel_log = {
+'''travel_log = {
     "France": ["Paris", "Lille", "Dijon"],
     "Germany": ["Berlin", "Hamburg", "Stuttgart"],
-}
+}'''
 
 #Nesting a dictionary in a dictionary
-travel_log = {
+'''travel_log = {
     
     "France": {"cities_visited": ["Paris", "Lille", "Dijon"], "total_visits": 12},
     "Germany": {"cities_visited": ["Berlin", "Hamburg", "Stuttgart"], "total_visits": 5},
-}
+}'''
 
 #Nesting a dictionary in a list
-travel_log = [
+'''travel_log = [
     {"country": "France",
       "cities_visited": ["Paris", "Lille", "Dijon"],
         "total_visits": 12},
     {"country": "Germany",
       "cities_visited": ["Berlin", "Hamburg", "Stuttgart"],
         "total_visits": 5},
-]
+]'''
 
 #Exercise 02
-country = input("Enter the country you have visited: ")
+'''country = input("Enter the country you have visited: ")
 visits = int(input(f"How many times you have visited {country}: "))
 list_of_cities = eval(input())
 travel_log = [
@@ -105,4 +105,7 @@ def add_new_country(name, times_visited, cities_visited):
 
 add_new_country(country, visits, list_of_cities)
 print(f"I have been to {travel_log[2]['country']} {travel_log[2]['visits']} times.")
-print(f"My favourite city was {travel_log[2]['cities_visited'][0]}")
+print(f"My favourite city was {travel_log[2]['cities_visited'][0]}")'''
+
+
+
