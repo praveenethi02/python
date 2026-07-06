@@ -1,4 +1,7 @@
 
+from turtle import clear
+
+
 progrmming_dictionary = {
     "Bug": "An error in a program that prevents the program from running as expected.",
     "Function": "A piece of code that you can easily call over and over again.",
@@ -107,5 +110,43 @@ add_new_country(country, visits, list_of_cities)
 print(f"I have been to {travel_log[2]['country']} {travel_log[2]['visits']} times.")
 print(f"My favourite city was {travel_log[2]['cities_visited'][0]}")'''
 
+#final project day 009
+
+import os
+
+def clear():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+bids = {}
+bidding_finished = False
 
 
+def find_highest_bidder(bidding_record):
+    highest_bid = 0
+    winner = ""
+
+    for bidder in bidding_record:
+        bid_amount = bidding_record[bidder]
+
+        if bid_amount > highest_bid:
+            highest_bid = bid_amount
+            winner = bidder
+
+    print(f"\nThe winner is {winner} with a bid of ${highest_bid}")
+
+
+while not bidding_finished:
+    name = input("Enter your name: ")
+    price = int(input("Enter your bid: $"))
+
+    bids[name] = price
+
+    should_continue = input("Are there any other bidders? Type 'yes' or 'no': ").lower()
+
+    if should_continue == "no":
+        bidding_finished = True
+        clear()
+        find_highest_bidder(bids)
+
+    elif should_continue == "yes":
+        clear()
