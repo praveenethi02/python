@@ -13,7 +13,7 @@
 # print(format_name(input("Enter first name : "),input("Enter last name : ")))
 
 #exersize 1
-
+"""
 def is_leap(year):
     if year % 4 == 0:
         if year % 100 == 0:
@@ -48,3 +48,51 @@ year = int(input("Enter a year: "))
 month = int(input("Enter a month: "))
 days = days_in_month(year,month)
 print(days)
+"""
+
+#Calculator
+
+#Add
+def add(n1, n2):
+    return n1 + n2
+
+#Substract
+def subtract(n1, n2):
+    return n1 - n2
+
+#Multiply
+def multiply(n1, n2):
+    return n1 * n2
+
+#Divide
+def divide(n1, n2):
+    return n1 / n2
+
+
+operations = {
+    "+" : add,
+    "-" : subtract,
+    "*" : multiply,
+    "/" : divide 
+}
+
+num1 = int(input("Enter first number : "))
+
+for symble in operations:
+    print(symble)
+
+operation_symble = input("Pick an operation from the line above : ")
+
+num2 = int(input("Enter second number : "))
+
+calculation_function = operations[operation_symble]
+first_answer = calculation_function(num1, num2)
+
+print(f"{num1} {operation_symble} {num2} = {first_answer}")
+
+operation_symble = input("Pick an operation from the line above : ")
+num3 = int(input("Enter another number : "))
+calculation_function = operations[operation_symble]
+second_answer = calculation_function(first_answer, num3)
+
+print(f"{first_answer} {operation_symble} {num3} = {second_answer}")
