@@ -76,23 +76,27 @@ operations = {
     "/" : divide 
 }
 
-num1 = int(input("Enter first number : "))
+def calculator():
+    num1 = float(input("Enter first number : "))
 
-for symble in operations:
-    print(symble)
+    for symble in operations:
+        print(symble)
 
-operation_symble = input("Pick an operation from the line above : ")
+    should_continue = True
 
-num2 = int(input("Enter second number : "))
+    while should_continue:
+        operation_symble = input("Pick an operation from the line above : ")
+        num2 = float(input("Enter second number : "))
+        calculation_function = operations[operation_symble]
+        answer = calculation_function(num1, num2)
 
-calculation_function = operations[operation_symble]
-first_answer = calculation_function(num1, num2)
+        print(f"{num1} {operation_symble} {num2} = {answer}")
 
-print(f"{num1} {operation_symble} {num2} = {first_answer}")
+        if input(f"Type 'y' to continue calcilatin with {answer}, or type 'n' to exit : ")=="y":
+            num1 = answer
 
-operation_symble = input("Pick an operation from the line above : ")
-num3 = int(input("Enter another number : "))
-calculation_function = operations[operation_symble]
-second_answer = calculation_function(first_answer, num3)
+        else:
+            should_continue= False
+            calculator()
 
-print(f"{first_answer} {operation_symble} {num3} = {second_answer}")
+calculator()
