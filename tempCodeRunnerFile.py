@@ -1,3 +1,10 @@
-print("Wel come the number gessing game!")
-choose = input("I'm thinking of a number between 1 and 100." \
-"Choose a difficulty.Type 'easy' or 'hard' : ")
+#use a dibugger
+# def mutate(a_list):
+#     b_list = []
+#     for item in a_list:
+#         new_item = item * 2
+#         b_list.append(new_item)
+
+#     print(b_list)
+
+# mutate([1,2,3,5,8,13])

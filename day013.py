@@ -32,10 +32,32 @@
 #     print("You can not drive")
 
 
-#Print is your friend
-pages = 0
-word_per_page = 0
-pages = int(input("How many pages do you want to print? "))
-word_per_page = int(input("How many words per page? "))
-total_words = pages * word_per_page
-print(total_words)
+# #Print is your friend
+# pages = 0
+# word_per_page = 0
+# pages = int(input("How many pages do you want to print? "))
+# word_per_page = int(input("How many words per page? "))
+# total_words = pages * word_per_page
+# print(total_words)
+
+
+# #use a dibugger
+# def mutate(a_list):
+#     b_list = []
+#     for item in a_list:
+#         new_item = item * 2
+#         b_list.append(new_item)
+
+#     print(b_list)
+
+# mutate([1,2,3,5,8,13])
+
+
+# exersise 1
+
+number = int(input("Enter number : "))
+
+if number % 2 == 0 :
+    print("Even number")
+else:
+    print("Odd number")
