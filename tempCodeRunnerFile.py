@@ -1,10 +1,8 @@
-#use a dibugger
-# def mutate(a_list):
-#     b_list = []
-#     for item in a_list:
-#         new_item = item * 2
-#         b_list.append(new_item)
+# exersise 1
 
-#     print(b_list)
+# number = int(input("Enter number : "))
 
-# mutate([1,2,3,5,8,13])
+# if number % 2 == 0 :
+#     print("Even number")
+# else:
+#     print("Odd number")

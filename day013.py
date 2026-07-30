@@ -53,11 +53,38 @@
 # mutate([1,2,3,5,8,13])
 
 
-# exersise 1
+# # exersise 1
 
-number = int(input("Enter number : "))
+# number = int(input("Enter number : "))
 
-if number % 2 == 0 :
-    print("Even number")
-else:
-    print("Odd number")
+# if number % 2 == 0 :
+#     print("Even number")
+# else:
+#     print("Odd number")
+
+
+# #exersise 2
+# year = int(input("Enter year : "))
+
+# if year % 4 == 0:
+#     if year % 100 == 0:
+#         if year % 400 == 0:
+#             print("leap year")
+#         else:
+#             print("not leap year")
+#     else:
+#         print("leap year")
+# else:
+#     print("Not leap year")
+
+#exersise 3
+target = int(input())
+for number in range(1, target + 1):
+    if number % 3 == 0 and number % 5 == 0:
+        print("fizzbuzz")
+    elif number % 3 == 0:
+        print("fizz")
+    elif number % 5 == 0:
+        print("buzz")
+    else:
+        print(number)
