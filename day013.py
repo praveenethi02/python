@@ -8,9 +8,34 @@
 
 
 
-#Reproduce the bug
+# #Reproduce the bug
+# from random import randint
+# dice_imgs = ["❶", "❷", "❸", "❹", "❺", "❻"]
+# dice_num = randint(0,5)
+# print(dice_imgs[dice_num])
 
-from random import randint
-dice_imgs = ["❶", "❷", "❸", "❹", "❺", "❻"]
-dice_num = randint(0,5)
-print(dice_imgs[dice_num])
+
+# # play computer
+# year = int(input("What's the your birth year ? "))
+# if year > 1980 and year < 1994 :
+#     print("You are a millenial.")
+# elif(year >= 1994):
+#     print("You are the gen Z.")
+
+
+# #fix the error
+# age = int(input("Enter your Age : "))
+# if age > 18:
+#     print(f"You can drive at age {age}")
+
+# else:
+#     print("You can not drive")
+
+
+#Print is your friend
+pages = 0
+word_per_page = 0
+pages = int(input("How many pages do you want to print? "))
+word_per_page = int(input("How many words per page? "))
+total_words = pages * word_per_page
+print(total_words)
