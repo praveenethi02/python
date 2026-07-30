@@ -84,8 +84,9 @@
 import random
 
 def game():
-    print("Welcome to the Number Guessing Game!")
+    print("Welcome to the Number Guessing Game.!")
     print("I'm thinking of a number between 1 and 100.")
+
     
     random_int = random.randint(1, 100)
     choose = input("Choose a difficulty. Type 'easy' or 'hard': ").lower()
